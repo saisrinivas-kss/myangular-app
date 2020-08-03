@@ -12,11 +12,13 @@ import { MatButtonModule } from '@angular/material/button';
 import { Covid19infoComponent } from './components/covid-19info.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { FlexLayoutModule } from "@angular/flex-layout";
+import { MatInputModule } from '@angular/material/input';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
 
 @NgModule({
   declarations: [
     AppComponent,
-    Covid19infoComponent
+    Covid19infoComponent,
   ],
   imports: [
     BrowserModule,
@@ -25,7 +27,8 @@ import { FlexLayoutModule } from "@angular/flex-layout";
     FormsModule,
     BrowserAnimationsModule,
     FlexLayoutModule,
-    MatCardModule,MatIconModule,MatButtonModule,MatGridListModule
+    Ng2SearchPipeModule,
+    MatCardModule,MatIconModule,MatButtonModule,MatGridListModule,MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -10,6 +10,8 @@ import { HttpErrorResponse } from '@angular/common/http';
 })
 export class Covid19infoComponent implements OnInit {
 
+  searchCountry:string;
+
 
   public coronacasesinfo:any;
 

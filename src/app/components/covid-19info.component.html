@@ -61,8 +61,14 @@
 </section>
 
 <section class="countries-effected">
+    <div class="filter">
+        <mat-form-field class="filter-field">
+            <mat-label>Country Wise List</mat-label>
+            <input matInput type="text" placeholder="search by country" [(ngModel)]="searchCountry">
+        </mat-form-field>
+    </div>
    <div class="country">
-       <mat-card *ngFor = "let covid19 of coronacasesinfo.Countries" >
+       <mat-card *ngFor = "let covid19 of coronacasesinfo.Countries | filter:searchCountry">
            <mat-card-header>
            
                <mat-card-title>{{covid19.Country}}</mat-card-title>
