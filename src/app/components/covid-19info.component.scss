@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.coronavirus{
+    .coronavirus-card{
+        background-color: indigo;
+        border-radius: 0;
+        .coronavirus-heading{
+            color: ivory;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .coronavirus-subheading{
+            color: ivory;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .mat-subheading-2{
+                .virus-icon{
+                    color: red;
+                }
+            }
+        }
+    }
+   
+}
+.viruscases-info-card{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding-top: 25px;
+    .viruscases-info{
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        .column{
+            margin: 0 auto;
+            display: inline-block;
+            .subcolumn1, .subcolumn2{
+                display: flex;
+            }
+        }
+    }
+    .lastupdated{
+        text-align: right;
+    }
+}
+.allcountrieslist_btn {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.columncases{
+    display: flex;
+}
+
+.countries-effected{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10px;
+    .country{
+        display: flex;
+        flex-wrap: wrap;
+        mat-card{
+            margin: 10px;
+            flex: 20%;
+        }
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .viruscases-info,.country {
+      flex-direction: column;
+    }
+    .column{
+        margin-bottom: 10px!important;
+    }
+  }
