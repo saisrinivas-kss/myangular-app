@@ -11,11 +11,14 @@ import { HttpErrorResponse } from '@angular/common/http';
 export class Covid19infoComponent implements OnInit {
 
   searchCountry:string;
-
+  
+  public allinfocountries: any;
 
   public coronacasesinfo:any;
 
   public Global:any;
+
+ 
 
   constructor(public covidcasesinfo:Covid19casesService, public allcontries__info:AllcountriesinfoService) { }
 
@@ -25,6 +28,15 @@ export class Covid19infoComponent implements OnInit {
     }, (errResp:HttpErrorResponse)=>{
           console.warn(errResp, "Error in Fetching data....");
     });
+    
+    this.allcontries__info.getallcountriesinfo().subscribe((posre)=>{
+      this.allinfocountries = posre;
+    },
+
+    (errresp:HttpErrorResponse)=>{
+      console.warn(errresp, "Error in fetching data......");
+    });
+    
   };
 
 };

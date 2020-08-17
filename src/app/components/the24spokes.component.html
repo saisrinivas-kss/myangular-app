@@ -1,0 +1,82 @@
+<div class="toolbar">
+    <mat-toolbar>
+      <mat-toolbar-row class="main-nav">
+        <div class="site_title">
+            <div class="site-logo" style="display: flex;">
+                <img src="../../assets/images/logo.png" alt="" width="32px" height="32px">
+                <h2 class="mat-title" style="padding-left: 4px;">THE 24 SPOKES</h2>
+            </div>
+          <p class="mat-small">When the times speaks, the world listens</p>
+        </div>
+      </mat-toolbar-row>
+  
+      <mat-toolbar-row class="menu-nav"  >
+        <!-- fxShow="true" fxHide.gt-sm -->
+        <button mat-icon-button  fxShow="true" fxHide.gt-sm (click)="sidetoollbar.toggle()" >
+          <mat-icon>menu</mat-icon>
+        </button>
+        <button mat-button >
+          Home
+        </button>
+        <a mat-button [routerLink]="['/covid-19info']" >Coronavirus</a>
+        <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+          <mat-icon>share</mat-icon>
+        </button>
+      </mat-toolbar-row>
+    </mat-toolbar>
+    <!-- side nav mobile view -->
+    <mat-sidenav-container fxFlexFill>
+      <mat-sidenav #sidetoollbar>
+        <mat-nav-list>
+          <a href="#" mat-list-item>Menu Item 1</a>
+          <a href="#" mat-list-item>Menu Item 2</a>
+          <a href="#" mat-list-item>Menu Item 3</a>
+          <a href="#" mat-list-item>Menu Item 4</a>
+          <a href="#" mat-list-item>Menu Item 5</a>
+          <a href="#"mat-list-item>Menu Item 6</a>
+        </mat-nav-list>
+      </mat-sidenav>
+      <mat-sidenav-content fxFlexFill>
+          <div class="breaking_news">
+            <div class="breaking_news-card">
+                <div class="breaking_news-title">
+                    <h3 class="mat-title">Breaking News</h3>
+                    <marquee>Get Updates Stay Tuned...! </marquee>
+                </div>
+            </div>
+          </div>
+        <div class="covid_india">
+          <mat-card class="covid_india-card"> 
+            <div class="covid_india-info">
+              <div class="covid-title">
+                <div class="heading" style="display: flex;">
+                  <div class="virusicon">
+                    <span class="material-icons">coronavirus</span>
+                  </div>
+                  <h3 class="mat-title">COVID-19 IN INDIA</h3>
+                </div>
+                <div class="date">
+                  <p class="mat-caption">Updated on: {{indiacoronacases.lastRefreshed | date:'medium'}} </p>
+                </div>
+              </div>
+              <div class="covid-india-content">
+                <div class="totalcases">
+                  <h5 style="color: #f0ad4e;">TOTAL CASES</h5>
+                  <p>{{indiacoronacases.data.summary.total | number }}</p>
+                </div>
+                <div class="confrimedcases">
+                  <h5 style="color:#5cb85c">TOTAL RECOVERED</h5>
+                  <p>{{indiacoronacases.data.summary.discharged | number}}</p>
+                </div>
+                <div class="deaths">
+                  <h5 style="color: #d9534f;">TOTAL DEATHS</h5>
+                  <p>{{indiacoronacases.data.summary.deaths | number}}</p>
+                </div>
+              </div>
+            </div>
+          </mat-card>
+        </div>
+      </mat-sidenav-content>
+    </mat-sidenav-container>
+  </div>
+  

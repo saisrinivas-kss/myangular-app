@@ -13,12 +13,18 @@ import { Covid19infoComponent } from './components/covid-19info.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { FlexLayoutModule } from "@angular/flex-layout";
 import { MatInputModule } from '@angular/material/input';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
+import { MatSortModule } from '@angular/material/sort';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { The24spokesComponent } from './components/the24spokes.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     Covid19infoComponent,
+    The24spokesComponent,
   ],
   imports: [
     BrowserModule,
@@ -28,7 +34,7 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
     BrowserAnimationsModule,
     FlexLayoutModule,
     Ng2SearchPipeModule,
-    MatCardModule,MatIconModule,MatButtonModule,MatGridListModule,MatInputModule
+    MatCardModule,MatIconModule,MatButtonModule,MatGridListModule,MatInputModule,MatToolbarModule,MatSidenavModule,MatListModule,MatSortModule
   ],
   providers: [],
   bootstrap: [AppComponent]

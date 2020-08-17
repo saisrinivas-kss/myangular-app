@@ -70,7 +70,8 @@
    <div class="country">
        <mat-card *ngFor = "let covid19 of coronacasesinfo.Countries | filter:searchCountry">
            <mat-card-header>
-           
+                <maticard-image>
+                </maticard-image>
                <mat-card-title>{{covid19.Country}}</mat-card-title>
            </mat-card-header>
            <mat-card-content>
