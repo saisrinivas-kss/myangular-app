@@ -2,84 +2,211 @@
     margin: 0;
     padding: 0;
 }
-.coronavirus{
-    .coronavirus-card{
-        background-color: indigo;
-        border-radius: 0;
-        .coronavirus-heading{
-            color: ivory;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .coronavirus-subheading{
-            color: ivory;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            .mat-subheading-2{
-                .virus-icon{
-                    color: red;
-                }
-            }
-        }
-    }
-   
-}
-.viruscases-info-card{
-    width: 80%;
-    margin: 0 auto;
-    margin-top: 10px;
-    // padding-top: 25px;
-    // flex: 50%;
-    .viruscases-info{
-        margin: 0 auto;
-        display: flex;
-        justify-content: center;
-        .column{
-            margin: 0 auto;
-            display: inline-block;
-            .subcolumn1, .subcolumn2{
-                display: flex;
-            }
-        }
-    }
-    .lastupdated{
-        text-align: right;
-    }
-}
-.allcountrieslist_btn {
-    margin-top: 10px;
+.site_title{
+    margin: 0px auto;
     text-align: center;
 }
 
-.columncases{
-    display: flex;
+.mat-drawer-container{
+    position: fixed;
 }
-
-.countries-effected{
+.mat-drawer{
+    top: 120px;
+}
+.mat-drawer-content{
+    background-color: #ffffff;
+}
+.covid_india-card{
     width: 80%;
-    margin: 0 auto;
-    margin-top: 10px;
-    .country{
+    margin:20px auto;
+    
+    .covid_india-info{
         display: flex;
         flex-wrap: wrap;
-        mat-card{
-            margin: 10px;
-            flex: 20%;
+        .covid-title{
+            flex-grow:1;
+            .heading{
+                .virusicon{
+                    .material-icons{
+                        font-size:36px; color: #d9534f;
+                    }
+                }
+                .mat-title{
+                    color:#d9534f;
+                    line-height:2;
+                }
+            }
+        }
+        .covid-india-content{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            & > div{
+                // background-color: #17a2b8 ;
+                padding: 15px;
+            }
+            & > div > h5{
+                margin-bottom: 5px;
+                letter-spacing: 1px;
+            }
+            & > div > p{
+                font-weight: 500;
+            }
         }
     }
 }
-// .filter{
-//     display: flex;
-//     justify-content: center;
+
+mat-toolbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    box-shadow: 0 0 10px #dddddd;
+}
+mat-sidenav-content{
+    padding:130px 0 0 0;
+}
+.breaking_news{
+    padding: 25px 0px;
+}
+.breaking_news-card{
+    width: 80%;
+    margin:0px auto;
+    
+}
+.breaking_news-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.breaking_news-title .mat-title{
+    background-color: red;
+    color: ivory;
+    width: 30%;
+    text-align: center;
+    padding: 10px 15px 10px 10px;
+}
+@media screen and (max-width:768px){
+    .breaking_news-title .mat-title{
+        width: 100%;
+    }
+}
+.navigation{
+    background-color: ivory;
+}
+.main-nav{
+    margin-top:10px;
+}
+.menu-nav-links{
+    margin:0 auto;
+}
+.searchfield{
+    padding: 5px 5px 5px 10px;
+}
+.serachbox{
+    margin:0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// *{
+//     margin: 0;
+//     padding: 0;
+// }
+// .coronavirus{
+//     .coronavirus-card{
+//         background-color: indigo;
+//         border-radius: 0;
+//         .coronavirus-heading{
+//             color: ivory;
+//             display: flex;
+//             align-items: center;
+//             justify-content: center;
+//         }
+//         .coronavirus-subheading{
+//             color: ivory;
+//             display: flex;
+//             align-items: center;
+//             justify-content: center;
+//             .mat-subheading-2{
+//                 .virus-icon{
+//                     color: red;
+//                 }
+//             }
+//         }
+//     }
+   
+// }
+// .viruscases-info-card{
+//     width: 80%;
+//     margin: 0 auto;
+//     margin-top: 10px;
+//     // padding-top: 25px;
+//     // flex: 50%;
+//     .viruscases-info{
+//         margin: 0 auto;
+//         display: flex;
+//         justify-content: center;
+//         .column{
+//             margin: 0 auto;
+//             display: inline-block;
+//             .subcolumn1, .subcolumn2{
+//                 display: flex;
+//             }
+//         }
+//     }
+//     .lastupdated{
+//         text-align: right;
+//     }
+// }
+// .allcountrieslist_btn {
+//     margin-top: 10px;
+//     text-align: center;
 // }
 
-@media screen and (max-width: 768px) {
-    .viruscases-info,.country {
-      flex-direction: column;
-    }
-    .column{
-        margin-bottom: 10px!important;
-    }
-  }
+// .columncases{
+//     display: flex;
+// }
+
+// .countries-effected{
+//     width: 80%;
+//     margin: 0 auto;
+//     margin-top: 10px;
+//     .country{
+//         display: flex;
+//         flex-wrap: wrap;
+//         mat-card{
+//             margin: 10px;
+//             flex: 20%;
+//         }
+//     }
+// }
+// // .filter{
+// //     display: flex;
+// //     justify-content: center;
+// // }
+
+// @media screen and (max-width: 768px) {
+//     .viruscases-info,.country {
+//       flex-direction: column;
+//     }
+//     .column{
+//         margin-bottom: 10px!important;
+//     }
+//   }

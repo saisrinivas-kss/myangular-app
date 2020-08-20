@@ -16,15 +16,26 @@ import { MatInputModule } from '@angular/material/input';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
+import { MatTableModule } from '@angular/material/table';
 import { MatSortModule } from '@angular/material/sort';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatTooltipModule } from '@angular/material/tooltip';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { The24spokesComponent } from './components/the24spokes.component';
+import { NavigationComponent } from './components/navigation/navigation.component';
+import { CovidcasesComponent } from './components/covidcases/covidcases.component';
+import { BreakingnewsComponent } from './components/breakingnews/breakingnews.component';
+import { SigninComponent } from './components/signin/signin.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     Covid19infoComponent,
     The24spokesComponent,
+    NavigationComponent,
+    CovidcasesComponent,
+    BreakingnewsComponent,
+    SigninComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,7 +45,7 @@ import { The24spokesComponent } from './components/the24spokes.component';
     BrowserAnimationsModule,
     FlexLayoutModule,
     Ng2SearchPipeModule,
-    MatCardModule,MatIconModule,MatButtonModule,MatGridListModule,MatInputModule,MatToolbarModule,MatSidenavModule,MatListModule,MatSortModule
+    MatCardModule,MatIconModule,MatButtonModule,MatGridListModule,MatInputModule,MatToolbarModule,MatSidenavModule,MatListModule,MatSortModule,MatMenuModule,MatTableModule,MatTooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]

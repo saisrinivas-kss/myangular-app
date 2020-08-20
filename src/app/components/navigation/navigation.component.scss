@@ -1,0 +1,29 @@
+
+.example-container {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  .sasl{
+
+    z-index: 9999;
+    position: fixed;
+    background-color: indigo;
+
+  }
+
+  .mat-drawer{
+    position:fixed;
+    width: 200px;
+  }
+.logo-text{
+    display: flex;
+}
+.site-title{
+    margin:0 auto;
+}
+.menu_nav{
+    margin:0 auto; 
+}

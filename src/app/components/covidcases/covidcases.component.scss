@@ -1,0 +1,39 @@
+.overallCases_inIndia{
+    .panel{
+        width: 70%;
+        margin:0 auto;
+        .caseslist{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            & > div{
+                margin: 10px;
+                font-size: 30px;
+                
+            }
+            .heading{
+                .covid-title{
+                    color: rgb(255, 0, 0);
+                    margin-bottom: 0;
+                }
+                .update{
+                    font-style: italic;
+                    margin-top:0;
+                }
+            }
+            
+            .info{
+                background-color: beige;
+                text-align: center;
+                padding:10px; 
+                .d-info{
+                    font-size: medium;
+                    font-weight: bold;
+                } 
+            }
+        }
+    }
+}
+
+
+

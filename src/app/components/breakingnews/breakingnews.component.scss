@@ -1,0 +1,24 @@
+.breakingnews{
+    .panel{
+        width: 70%;
+        margin: 0 auto;
+        .breakingnews-info{
+            display: flex;
+            align-items: center;
+            .heading{
+                flex-grow:4;
+                background-color: rgb(255, 0, 0);
+                text-align: center;
+                .mat-title{
+                    color: #ffffff;
+                    margin:10px;
+                }
+            }
+            .info{
+                flex-flow: 8;
+                color: #222222;
+                font-weight:500;
+            }
+        }
+    }
+}
