@@ -7,64 +7,42 @@
     </div>
    </div>
   </mat-toolbar-row>
-  <mat-toolbar-row class="" style="margin-top:57px ;background-color: indigo;">
+  <mat-toolbar-row class="menu-nav">
     <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.gt-sm>
       <mat-icon>menu</mat-icon>
     </button>
     <div class="menu_nav" fxShow="true" fxHide.lt-md>
-      <!-- The following menu items will be hidden on both SM and XS screen sizes -->
-      <a href="#" mat-button>Menu Item 1</a>
-      <a href="#" mat-button>Menu Item 2</a>
-      <a href="#" mat-button>Menu Item 3</a>
-      <a href="#" mat-button>Menu Item 4</a>
-      <a href="#" mat-button>Menu Item 5</a>
-      <a href="#" mat-button>Menu Item 6</a>
+      <a href="#" mat-button>Home</a>
+      <a href="#" mat-button>News</a>
+      <a href="#" mat-button>Coronavirus</a>
+      <a href="#" mat-button>Business</a>
+      <a href="#" mat-button>Opinions</a>
+      <a href="#" mat-button>Technology</a>
+      <a href="#" mat-button>Sports</a>
+      <a href="#" mat-button>Entertainment</a>
     </div>
   </mat-toolbar-row>
 </mat-toolbar>
 
 <mat-sidenav-container  fxFlexFill >
-  <mat-sidenav #sidenav fxShow="true" fxHide.gt-sm>
-    <p>asbdvnasbdvnbdvanvd</p>
-    <p>asbdvnasbdvnbdvanvd</p>
-    <p>asbdvnasbdvnbdvanvd</p>
-    <p>asbdvnasbdvnbdvanvd</p>
-    <p>asbdvnasbdvnbdvanvd</p>
-    <p>asbdvnasbdvnbdvanvd</p>
-    <p>asbdvnasbdvnbdvanvd</p>
-    <p>asbdvnasbdvnbdvanvd</p>
-    <p>asbdvnasbdvnbdvanvd</p>
-    <p>asbdvnasbdvnbdvanvd</p>
-    <p>asbdvnasbdvnbdvanvd</p>
-    <p>asbdvnasbdvnbdvanvd</p>
-    <p>asbdvnasbdvnbdvanvd</p>
-    <p>asbdvnasbdvnbdvanvd</p>
-    <p>asbdvnasbdvnbdvanvd</p>
-    <p>asbdvnasbdvnbdvanvd</p>
-    <p>asbdvnasbdvnbdvanvd</p>
-    <p>asbdvnasbdvnbdvanvd</p>
-    <p>asbdvnasbdvnbdvanvd</p>
-    <p>asbdvnasbdvnbdvanvd</p>
-    <p>asbdvnasbdvnbdvanvd</p>
-    <p>asbdvnasbdvnbdvanvd</p>
-    <p>asbdvnasbdvnbdvanvd</p>
-    <p>asbdvnasbdvnbdvanvd</p>
-    <p>asbdvnasbdvnbdvanvd</p>
-    <p>asbdvnasbdvnbdvanvd</p>
-    <p>asbdvnasbdvnbdvanvd</p>
-    <p>asbdvnasbdvnbdvanvd</p>
-    <p>asbdvnasbdvnbdvanvd</p>
-    <p>asbdvnasbdvnbdvanvd</p>
-    <p>asbdvnasbdvnbdvanvd</p>
-    <p>asbdvnasbdvnbdvanvd</p>
-    <p>asbdvnasbdvnbdvanvd</p>
-    <p>asbdvnasbdvnbdvanvd</p>
-    <p>asbdvnasbdvnbdvanvd</p>
-    <p>asbdvnasbdvnbdvanvd</p>
-    <p>asbdvnasbdvnbdvanvd</p>
-    <p>asbdvnasbdvnbdvanvd</p>
-    <p>asbdvnasbdvnbdvanvd</p>
-    <p>asbdvnasbdvnbdvanvd</p>
+  <mat-sidenav #sidenav class="side-menu" fxShow="true" fxHide.gt-sm>
+    <button mat-icon-button (click)="sidenav.close()" class="side_c-btn"><mat-icon>highlight_off</mat-icon> </button>
+    <div class="side-menu-links">
+      <p><a href="#" mat-button>Home</a></p>
+      <p><a href="#" mat-button>News</a></p>
+      <p><a href="#" mat-button>Coronavirus</a></p>
+      <p><a href="#" mat-button>Business</a></p>
+      <p><a href="#" mat-button>Opinions</a></p>
+      <p><a href="#" mat-button>Technology</a></p>
+      <p><a href="#" mat-button>Sports</a></p>
+      <p><a href="#" mat-button>Entertainment</a></p>
+    </div>
+ 
+    <div class="footer">
+      <div class="copy-rights">
+        <p>Copyrights &copy; 2020 All Rights are Reserved</p>
+      </div>
+    </div>
   </mat-sidenav>
 
   <mat-sidenav-content fxFlexFill>

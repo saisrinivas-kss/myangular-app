@@ -10,13 +10,28 @@
 
     z-index: 9999;
     position: fixed;
-    background-color: indigo;
-
+    background-color: #ffffff;
+    color: #222222;
   }
-
+  .menu-nav{
+    background-color: #ffffff;
+    margin-top:57px;
+    color: #222222;
+  }
+  .side_c-btn{
+    float: right;
+  }
+  .side-menu-links{
+    padding-left:10px;
+  }
+  .copy-rights{
+    padding:0 10px;
+    text-align: center;
+  }
   .mat-drawer{
     position:fixed;
-    width: 200px;
+    width: 250px;
+    top:54px;
   }
 .logo-text{
     display: flex;
