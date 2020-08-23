@@ -26,6 +26,8 @@ import { NavigationComponent } from './components/navigation/navigation.componen
 import { CovidcasesComponent } from './components/covidcases/covidcases.component';
 import { BreakingnewsComponent } from './components/breakingnews/breakingnews.component';
 import { SigninComponent } from './components/signin/signin.component';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { AllindianewsComponent } from './components/allindianews/allindianews.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +38,7 @@ import { SigninComponent } from './components/signin/signin.component';
     CovidcasesComponent,
     BreakingnewsComponent,
     SigninComponent,
+    AllindianewsComponent,
   ],
   imports: [
     BrowserModule,
@@ -45,7 +48,8 @@ import { SigninComponent } from './components/signin/signin.component';
     BrowserAnimationsModule,
     FlexLayoutModule,
     Ng2SearchPipeModule,
-    MatCardModule,MatIconModule,MatButtonModule,MatGridListModule,MatInputModule,MatToolbarModule,MatSidenavModule,MatListModule,MatSortModule,MatMenuModule,MatTableModule,MatTooltipModule
+    MatCardModule,MatIconModule,MatButtonModule,MatGridListModule,MatInputModule,MatToolbarModule,MatSidenavModule,MatListModule,MatSortModule,MatMenuModule,MatTableModule,MatTooltipModule,
+    SlickCarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]

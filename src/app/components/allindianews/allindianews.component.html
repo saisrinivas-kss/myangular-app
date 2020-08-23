@@ -1,0 +1,25 @@
+    <!-- <h2>{{TopheadlinesinIndia?.status}} </h2>
+    <div *ngFor = "let x of TopheadlinesinIndia.articles">
+        <p>{{x?.title}}</p>
+    </div> -->
+
+    <section class="news">
+        <div class="topheadlines">
+            <div class="topheadlinesinindia">
+                <mat-card *ngFor = "let x of TopheadlinesinIndia?.articles">
+                    <mat-card-header>
+                        <mat-card-title>{{x?.title}}</mat-card-title>
+                        <mat-card-subtitle>{{x?.source?.name}}</mat-card-subtitle>
+                    </mat-card-header>
+                    <img mat-card-image src="{{x?.urlToImage}}" alt="Photo of a Shiba Inu">
+                    <mat-card-content>
+                        <p>{{x?.description}}</p>
+                    </mat-card-content>
+                    <mat-card-actions>
+                       <p class="mat-small">{{x?.publishedAt | date:"medium"}}</p>
+                      </mat-card-actions>
+                </mat-card>
+            </div>
+        </div>
+    </section>
+

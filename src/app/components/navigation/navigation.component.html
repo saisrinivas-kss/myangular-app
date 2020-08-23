@@ -12,9 +12,9 @@
       <mat-icon>menu</mat-icon>
     </button>
     <div class="menu_nav" fxShow="true" fxHide.lt-md>
-      <a href="#" mat-button>Home</a>
-      <a href="#" mat-button>News</a>
-      <a href="#" mat-button>Coronavirus</a>
+      <a [routerLink]="['/the24spokes']" routerLinkActive="active" mat-button>News</a>
+      <!-- <a routerLink = "/allindianews" routerLinkActive="active" mat-button>News</a> -->
+      <a  routerLink = "/covid-19info" routerLinkActive="active" mat-button>Coronavirus</a>
       <a href="#" mat-button>Business</a>
       <a href="#" mat-button>Opinions</a>
       <a href="#" mat-button>Technology</a>

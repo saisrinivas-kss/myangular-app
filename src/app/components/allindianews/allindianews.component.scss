@@ -1,0 +1,15 @@
+.news{
+    .topheadlines{
+        width: 80%;
+        margin:0 auto;
+        .topheadlinesinindia{
+            display: flex;
+            flex-wrap: wrap;
+            mat-card{
+                // flex: 8;
+                margin: 10px;
+                width: 352px;
+            }
+        }
+    }
+}
